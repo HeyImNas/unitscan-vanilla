@@ -185,19 +185,16 @@ function unitscan.LOAD()
 		close:SetScale(.8)
 		close:SetHitRectInsets(8, 8, 8, 8)
 
-		--custom msg button
+		-- New message button
 		local messageButton = CreateFrame('Button', nil, button, 'UIPanelButtonTemplate')
-		-- Position it below the frame
-		messageButton:SetPoint('BOTTOM', close, 'BOTTOM', -60, -30)  
+		messageButton:SetPoint('BOTTOM', button, 'BOTTOM', 0, -20)  -- Centered at the bottom with a small vertical offset
 		messageButton:SetWidth(100)
 		messageButton:SetHeight(22)
 		messageButton:SetText('Send Message')
 		messageButton:SetScript('OnClick', function()
-        -- Change the message as you like
-		            	 --MSG							--Channel
-        SendChatMessage('Unit found: ' .. button:GetText(), 'SAY')
-    end)
-
+			-- msg .... chat channel
+			SendChatMessage('Unit found: ' .. button:GetText(), 'SAY')
+		end)
 	end
 	
 	do

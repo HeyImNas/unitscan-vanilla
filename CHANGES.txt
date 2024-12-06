@@ -1,0 +1,10 @@
+lightweight tag 4a924fc19e668cc2eeba557b2cea9022f0e4a353 v1.2.8
+Author:	Simon Hirsig <simon.hirsig@gmail.com>
+Date:	Fri Nov 29 20:45:49 2024 +0100
+
+commit 4a924fc19e668cc2eeba557b2cea9022f0e4a353
+Author: Simon Hirsig <simon.hirsig@gmail.com>
+Date:   Fri Nov 29 20:45:49 2024 +0100
+
+    client version bump
+
